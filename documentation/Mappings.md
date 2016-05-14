@@ -19,7 +19,7 @@
 <li><a href="#alignment-issues">Summary of alignment issues</a></li>
 <li><a href="#used-namespaces">Used namespaces</a></li>
 <li><a href="#mapping-summary">Mapping summary</a></li>
-<li><a href="#formal-definition">Formal definition</a>
+<li><a href="#formal-definition">SPARQL implementation</a>
 <ul>
 <li><a href="#formal-definition-locn-2-vcard">LOCN to vCard mapping</a></li>
 <li><a href="#formal-definition-locn-2-schema.org">LOCN to Schema.org mapping</a></li>
@@ -276,7 +276,9 @@
 </table>
 </section>
 <section id="formal-definition">
-<h2><a name="formal-definition">Formal definition</a></h2>
+<h2><a name="formal-definition">SPARQL implementation</a></h2>
+<p>This section illustrates a tentative implementation of the defined mappings, in the form of <a target="_blank" href="https://www.w3.org/TR/sparql11-query/#construct">SPARQL <code>CONSTRUCT</code> queries</a>.</p>
+<p>The defined SPARQL queries can be tested on the <a target="_blank" href="http://location.testproject.eu/sparql">SPARQL endpoint</a> of <a target="_blank" href="http://location.testproject.eu/">ISA Core Location Pilot</a>.</p>
 <section id="formal-definition-locn-2-vcard">
 <h3><a name="formal-definition-locn-2-vcard">LOCN to vCard mapping</a></h3>
 <section>
