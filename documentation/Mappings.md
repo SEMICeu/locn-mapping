@@ -280,64 +280,70 @@
 <section>
 <h4>Mapping rules for <a target="_blank" title="http://www.w3.org/ns/locn#geographicName" href="http://www.w3.org/ns/locn#locn:geographicName"><code>locn:geographicName</code></a></h4>
 <p>Test it on the <a target="_blank" href="http://location.testproject.eu/sparql">SPARQL endpoint</a> of <a target="_blank" href="http://location.testproject.eu/">ISA Core Location Pilot</a> [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FLocation+a+vcard%3ALocation+%3B%0D%0A++++vcard%3Afn+%3FgeographicName%0D%0A%7D+WHERE+%7B%0D%0A++%3FLocation+locn%3AgeographicName+%3FgeographicName%0D%0A%7D+LIMIT+100&format=application%2Frdf%2Bxml&timeout=0&debug=on">RDF/XML</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FLocation+a+vcard%3ALocation+%3B%0D%0A++++vcard%3Afn+%3FgeographicName%0D%0A%7D+WHERE+%7B%0D%0A++%3FLocation+locn%3AgeographicName+%3FgeographicName%0D%0A%7D+LIMIT+100&format=text%2Fturtle&timeout=0&debug=on">Turtle</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FLocation+a+vcard%3ALocation+%3B%0D%0A++++vcard%3Afn+%3FgeographicName%0D%0A%7D+WHERE+%7B%0D%0A++%3FLocation+locn%3AgeographicName+%3FgeographicName%0D%0A%7D+LIMIT+100&format=application%2Fld%2Bjson&timeout=0&debug=on">JSON-LD</a>]</p>
-<pre><code>PREFIX locn:  &lt;http://www.w3.org/ns/locn#&gt;
-PREFIX vcard: &lt;http://www.w3.org/2006/vcard/ns#&gt;
 
-CONSTRUCT {
-  ?Location a vcard:Location ;
-    vcard:fn ?geographicName
-} WHERE {
-  ?Location locn:geographicName ?geographicName
-}</code></pre>
+    PREFIX locn:  <http://www.w3.org/ns/locn#>
+    PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+
+    CONSTRUCT {
+      ?Location a vcard:Location ;
+        vcard:fn ?geographicName
+    } WHERE {
+      ?Location locn:geographicName ?geographicName
+    }
+
 </section>
 <section>
 <h4>Mapping rules for <a target="_blank" title="http://www.w3.org/ns/locn#geometry" href="http://www.w3.org/ns/locn#locn:geometry"><code>locn:geometry</code></a></h4>
 <p>Test it on the <a target="_blank" href="http://location.testproject.eu/sparql">SPARQL endpoint</a> of <a target="_blank" href="http://location.testproject.eu/">ISA Core Location Pilot</a> [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FResource+vcard%3AhasGeo+%3Fgeometry%0D%0A%7D+WHERE+%7B%0D%0A++%3FResource+locn%3Ageometry+%3Fgeometry%0D%0A%7D+LIMIT+100&format=application%2Frdf%2Bxml&timeout=0&debug=on">RDF/XML</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FResource+vcard%3AhasGeo+%3Fgeometry%0D%0A%7D+WHERE+%7B%0D%0A++%3FResource+locn%3Ageometry+%3Fgeometry%0D%0A%7D+LIMIT+100&format=text%2Fturtle&timeout=0&debug=on">Turtle</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FResource+vcard%3AhasGeo+%3Fgeometry%0D%0A%7D+WHERE+%7B%0D%0A++%3FResource+locn%3Ageometry+%3Fgeometry%0D%0A%7D+LIMIT+100&format=application%2Fld%2Bjson&timeout=0&debug=on">JSON-LD</a>]</p>
-<pre><code>PREFIX locn:  &lt;http://www.w3.org/ns/locn#&gt;
-PREFIX vcard: &lt;http://www.w3.org/2006/vcard/ns#&gt;
 
-CONSTRUCT {
-  ?Resource vcard:hasGeo ?geometry
-} WHERE {
-  ?Resource locn:geometry ?geometry
-}</code></pre>
+    PREFIX locn:  <http://www.w3.org/ns/locn#>
+    PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+
+    CONSTRUCT {
+      ?Resource vcard:hasGeo ?geometry
+    } WHERE {
+      ?Resource locn:geometry ?geometry
+    }
+
 </section>
 <section>
 <h4>Mapping rules for <a target="_blank" title="http://www.w3.org/ns/locn#Address" href="http://www.w3.org/ns/locn#locn:Address"><code>locn:Address</code></a></h4>
 <p>Test it on the <a target="_blank" href="http://location.testproject.eu/sparql">SPARQL endpoint</a> of <a target="_blank" href="http://location.testproject.eu/">ISA Core Location Pilot</a> [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FResource+vcard%3AhasAddress+%3FAddress+.%0D%0A++%3FAddress+a+vcard%3AAddress+%3B%0D%0A++++vcard%3Afn+%3FfullAddress+%3B%0D%0A++++vcard%3Astreet-address+%3Fstreet_name_and_nr+%3B%0D%0A++++vcard%3Astreet-address+%3Fstreet_name+%3B%0D%0A++++vcard%3Alocality+%3FpostName+%3B%0D%0A++++vcard%3Aregion+%3FadminUnitL2+%3B%0D%0A++++vcard%3Acountry-name+%3FadminUnitL1+%3B%0D%0A++++vcard%3Apostal-code+%3FpostCode+%3B%0D%0A++++vcard%3AhasUID+%3FaddressId%0D%0A%7D+WHERE+%7B%0D%0A++OPTIONAL+%7B+%3FResource+locn%3Aaddress+%3FAddress+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AfullAddress+%3FfullAddress+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3ApoBox+%3FpoBox+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fthoroughfare+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AlocatorDesignator+%3FlocatorDesignator+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fthoroughfare+%3B%0D%0A++++locn%3AlocatorDesignator+%3FlocatorDesignator%0D%0A++++BIND%28CONCAT%28%3Fthoroughfare%2C+%27%2C+%27%2C+%3FlocatorDesignator%29+AS+%3Fstreet_name_and_nr%29+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fstreet_name%0D%0A++++FILTER+NOT+EXISTS+%7B+%3FAddress+locn%3AlocatorDesignator+%3FlocatorDesignator+%7D+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AlocatorName+%3FlocatorName+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AaddressArea+%3FaddressArea+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3ApostName+%3FpostName+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AadminUnitL2+%3FadminUnitL2+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AadminUnitL1+%3FadminUnitL1+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3ApostCode+%3FpostCode+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AaddressId+%3FaddressId+.+%7D%0D%0A%7D+LIMIT+100&format=application%2Frdf%2Bxml&timeout=0&debug=on">RDF/XML</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FResource+vcard%3AhasAddress+%3FAddress+.%0D%0A++%3FAddress+a+vcard%3AAddress+%3B%0D%0A++++vcard%3Afn+%3FfullAddress+%3B%0D%0A++++vcard%3Astreet-address+%3Fstreet_name_and_nr+%3B%0D%0A++++vcard%3Astreet-address+%3Fstreet_name+%3B%0D%0A++++vcard%3Alocality+%3FpostName+%3B%0D%0A++++vcard%3Aregion+%3FadminUnitL2+%3B%0D%0A++++vcard%3Acountry-name+%3FadminUnitL1+%3B%0D%0A++++vcard%3Apostal-code+%3FpostCode+%3B%0D%0A++++vcard%3AhasUID+%3FaddressId%0D%0A%7D+WHERE+%7B%0D%0A++OPTIONAL+%7B+%3FResource+locn%3Aaddress+%3FAddress+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AfullAddress+%3FfullAddress+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3ApoBox+%3FpoBox+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fthoroughfare+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AlocatorDesignator+%3FlocatorDesignator+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fthoroughfare+%3B%0D%0A++++locn%3AlocatorDesignator+%3FlocatorDesignator%0D%0A++++BIND%28CONCAT%28%3Fthoroughfare%2C+%27%2C+%27%2C+%3FlocatorDesignator%29+AS+%3Fstreet_name_and_nr%29+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fstreet_name%0D%0A++++FILTER+NOT+EXISTS+%7B+%3FAddress+locn%3AlocatorDesignator+%3FlocatorDesignator+%7D+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AlocatorName+%3FlocatorName+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AaddressArea+%3FaddressArea+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3ApostName+%3FpostName+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AadminUnitL2+%3FadminUnitL2+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AadminUnitL1+%3FadminUnitL1+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3ApostCode+%3FpostCode+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AaddressId+%3FaddressId+.+%7D%0D%0A%7D+LIMIT+100&format=text%2Fturtle&timeout=0&debug=on">Turtle</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FResource+vcard%3AhasAddress+%3FAddress+.%0D%0A++%3FAddress+a+vcard%3AAddress+%3B%0D%0A++++vcard%3Afn+%3FfullAddress+%3B%0D%0A++++vcard%3Astreet-address+%3Fstreet_name_and_nr+%3B%0D%0A++++vcard%3Astreet-address+%3Fstreet_name+%3B%0D%0A++++vcard%3Alocality+%3FpostName+%3B%0D%0A++++vcard%3Aregion+%3FadminUnitL2+%3B%0D%0A++++vcard%3Acountry-name+%3FadminUnitL1+%3B%0D%0A++++vcard%3Apostal-code+%3FpostCode+%3B%0D%0A++++vcard%3AhasUID+%3FaddressId%0D%0A%7D+WHERE+%7B%0D%0A++OPTIONAL+%7B+%3FResource+locn%3Aaddress+%3FAddress+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AfullAddress+%3FfullAddress+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3ApoBox+%3FpoBox+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fthoroughfare+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AlocatorDesignator+%3FlocatorDesignator+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fthoroughfare+%3B%0D%0A++++locn%3AlocatorDesignator+%3FlocatorDesignator%0D%0A++++BIND%28CONCAT%28%3Fthoroughfare%2C+%27%2C+%27%2C+%3FlocatorDesignator%29+AS+%3Fstreet_name_and_nr%29+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fstreet_name%0D%0A++++FILTER+NOT+EXISTS+%7B+%3FAddress+locn%3AlocatorDesignator+%3FlocatorDesignator+%7D+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AlocatorName+%3FlocatorName+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AaddressArea+%3FaddressArea+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3ApostName+%3FpostName+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AadminUnitL2+%3FadminUnitL2+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AadminUnitL1+%3FadminUnitL1+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3ApostCode+%3FpostCode+.+%7D%0D%0A++OPTIONAL+%7B+%3FAddress+locn%3AaddressId+%3FaddressId+.+%7D%0D%0A%7D+LIMIT+100&format=application%2Fld%2Bjson&timeout=0&debug=on">JSON-LD</a>]</p>
-<pre><code>PREFIX locn:  &lt;http://www.w3.org/ns/locn#&gt;
-PREFIX vcard: &lt;http://www.w3.org/2006/vcard/ns#&gt;
 
-CONSTRUCT {
-  ?Resource vcard:hasAddress ?Address .
-  ?Address a vcard:Address ;
-    vcard:fn ?fullAddress ;
-    vcard:street-address ?street_name_and_nr ;
-    vcard:street-address ?street_name ;
-    vcard:locality ?postName ;
-    vcard:region ?adminUnitL2 ;
-    vcard:country-name ?adminUnitL1 ;
-    vcard:postal-code ?postCode ;
-    vcard:hasUID ?addressId
-} WHERE {
-  OPTIONAL { ?Resource locn:address ?Address . }
-  OPTIONAL { ?Address locn:fullAddress ?fullAddress . }
-#  OPTIONAL { ?Address locn:poBox ?poBox . }
-  OPTIONAL { ?Address locn:thoroughfare ?thoroughfare . }
-  OPTIONAL { ?Address locn:locatorDesignator ?locatorDesignator . }
-  OPTIONAL { ?Address locn:thoroughfare ?thoroughfare ;
-    locn:locatorDesignator ?locatorDesignator
-    BIND(CONCAT(?thoroughfare, ', ', ?locatorDesignator) AS ?street_name_and_nr) . }
-  OPTIONAL { ?Address locn:thoroughfare ?street_name
-    FILTER NOT EXISTS { ?Address locn:locatorDesignator ?locatorDesignator } . }
-#  OPTIONAL { ?Address locn:locatorName ?locatorName . }
-#  OPTIONAL { ?Address locn:addressArea ?addressArea . }
-  OPTIONAL { ?Address locn:postName ?postName . }
-  OPTIONAL { ?Address locn:adminUnitL2 ?adminUnitL2 . }
-  OPTIONAL { ?Address locn:adminUnitL1 ?adminUnitL1 . }
-  OPTIONAL { ?Address locn:postCode ?postCode . }
-  OPTIONAL { ?Address locn:addressId ?addressId . }
-}</code></pre>
+    PREFIX locn:  <http://www.w3.org/ns/locn#>
+    PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+
+    CONSTRUCT {
+      ?Resource vcard:hasAddress ?Address .
+      ?Address a vcard:Address ;
+        vcard:fn ?fullAddress ;
+        vcard:street-address ?street_name_and_nr ;
+        vcard:street-address ?street_name ;
+        vcard:locality ?postName ;
+        vcard:region ?adminUnitL2 ;
+        vcard:country-name ?adminUnitL1 ;
+        vcard:postal-code ?postCode ;
+        vcard:hasUID ?addressId
+    } WHERE {
+      OPTIONAL { ?Resource locn:address ?Address . }
+      OPTIONAL { ?Address locn:fullAddress ?fullAddress . }
+    #  OPTIONAL { ?Address locn:poBox ?poBox . }
+      OPTIONAL { ?Address locn:thoroughfare ?thoroughfare . }
+      OPTIONAL { ?Address locn:locatorDesignator ?locatorDesignator . }
+      OPTIONAL { ?Address locn:thoroughfare ?thoroughfare ;
+        locn:locatorDesignator ?locatorDesignator
+        BIND(CONCAT(?thoroughfare, ', ', ?locatorDesignator) AS ?street_name_and_nr) . }
+      OPTIONAL { ?Address locn:thoroughfare ?street_name
+        FILTER NOT EXISTS { ?Address locn:locatorDesignator ?locatorDesignator } . }
+    #  OPTIONAL { ?Address locn:locatorName ?locatorName . }
+    #  OPTIONAL { ?Address locn:addressArea ?addressArea . }
+      OPTIONAL { ?Address locn:postName ?postName . }
+      OPTIONAL { ?Address locn:adminUnitL2 ?adminUnitL2 . }
+      OPTIONAL { ?Address locn:adminUnitL1 ?adminUnitL1 . }
+      OPTIONAL { ?Address locn:postCode ?postCode . }
+      OPTIONAL { ?Address locn:addressId ?addressId . }
+    }
+
 </section>
 </section>
 <section id="formal-definition-locn-2-schema.org">
@@ -345,34 +351,38 @@ CONSTRUCT {
 <section>
 <h4>Mapping rules for <a target="_blank" title="http://www.w3.org/ns/locn#geographicName" href="http://www.w3.org/ns/locn#locn:geographicName"><code>locn:geographicName</code></a></h4>
 <p>Test it on the <a target="_blank" href="http://location.testproject.eu/sparql">SPARQL endpoint</a> of <a target="_blank" href="http://location.testproject.eu/">ISA Core Location Pilot</a> [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A%3FLocation+a+schema%3APlace+%3B%0D%0A++schema%3Aname+%3FgeographicName%0D%0A%7D+WHERE+%7B%0D%0A%3FLocation+locn%3AgeographicName+%3FgeographicName%0D%0A%7D+LIMIT+100&format=application%2Frdf%2Bxml&timeout=0&debug=on">RDF/XML</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A%3FLocation+a+schema%3APlace+%3B%0D%0A++schema%3Aname+%3FgeographicName%0D%0A%7D+WHERE+%7B%0D%0A%3FLocation+locn%3AgeographicName+%3FgeographicName%0D%0A%7D+LIMIT+100&format=text%2Fturtle&timeout=0&debug=on">Turtle</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A%3FLocation+a+schema%3APlace+%3B%0D%0A++schema%3Aname+%3FgeographicName%0D%0A%7D+WHERE+%7B%0D%0A%3FLocation+locn%3AgeographicName+%3FgeographicName%0D%0A%7D+LIMIT+100&format=application%2Fld%2Bjson&timeout=0&debug=on">JSON-LD</a>]</p>
-<pre><code>PREFIX locn:   &lt;http://www.w3.org/ns/locn#&gt;
-PREFIX schema: &lt;http://schema.org/&gt;
 
-CONSTRUCT {
-  ?Location a schema:Place ;
-    schema:name ?geographicName
-} WHERE {
-  ?Location locn:geographicName ?geographicName
-}</code></pre>
+    PREFIX locn:   <http://www.w3.org/ns/locn#>
+    PREFIX schema: <http://schema.org/>
+
+    CONSTRUCT {
+      ?Location a schema:Place ;
+        schema:name ?geographicName
+    } WHERE {
+      ?Location locn:geographicName ?geographicName
+    }
+
 </section>
 <section>
 <h4>Mappings rules for <a target="_blank" title="http://www.w3.org/ns/locn#geometry" href="http://www.w3.org/ns/locn#locn:geometry"><code>locn:geometry</code></a></h4>
 <p>Test it on the <a target="_blank" href="http://location.testproject.eu/sparql">SPARQL endpoint</a> of <a target="_blank" href="http://location.testproject.eu/">ISA Core Location Pilot</a> [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A%3FResource+schema%3Ageo+%3Fgeometry%0D%0A%7D+WHERE+%7B%0D%0A%3FResource+locn%3Ageometry+%3Fgeometry%0D%0A%7D+LIMIT+100&format=application%2Frdf%2Bxml&timeout=0&debug=on">RDF/XML</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A%3FResource+schema%3Ageo+%3Fgeometry%0D%0A%7D+WHERE+%7B%0D%0A%3FResource+locn%3Ageometry+%3Fgeometry%0D%0A%7D+LIMIT+100&format=text%2Fturtle&timeout=0&debug=on">Turtle</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A%3FResource+schema%3Ageo+%3Fgeometry%0D%0A%7D+WHERE+%7B%0D%0A%3FResource+locn%3Ageometry+%3Fgeometry%0D%0A%7D+LIMIT+100&format=application%2Fld%2Bjson&timeout=0&debug=on">JSON-LD</a>]</p>
-<pre><code>PREFIX locn:   &lt;http://www.w3.org/ns/locn#&gt;
-PREFIX schema: &lt;http://schema.org/&gt;
 
-CONSTRUCT {
-  ?Resource schema:geo ?geometry
-} WHERE {
-  ?Resource locn:geometry ?geometry
-}</code></pre>
+    PREFIX locn:   <http://www.w3.org/ns/locn#>
+    PREFIX schema: <http://schema.org/>
+
+    CONSTRUCT {
+      ?Resource schema:geo ?geometry
+    } WHERE {
+      ?Resource locn:geometry ?geometry
+    }
+
 </section>
 <section>
 <h4>Mapping rules for <a target="_blank" title="http://www.w3.org/ns/locn#Address" href="http://www.w3.org/ns/locn#locn:Address"><code>locn:Address</code></a></h4>
 <p>Test it on the <a target="_blank" href="http://location.testproject.eu/sparql">SPARQL endpoint</a> of <a target="_blank" href="http://location.testproject.eu/">ISA Core Location Pilot</a> [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A%3FResource+schema%3Aaddress+%3FAddress+.%0D%0A%3FAddress+a+schema%3APostalAddress+%3B%0D%0A++schema%3Aname+%3FfullAddress+%3B%0D%0A++schema%3AstreetAddress+%3Fstreet_name_and_nr+%3B%0D%0A++schema%3AstreetAddress+%3Fstreet_name+%3B%0D%0A++schema%3AaddressLocality+%3FpostName+%3B%0D%0A++schema%3AaddressRegion+%3FadminUnitL2+%3B%0D%0A++schema%3AaddressCountry+%3FadminUnitL1+%3B%0D%0A++schema%3ApostalCode+%3FpostCode%0D%0A%7D+WHERE+%7B%0D%0AOPTIONAL+%7B+%3FResource+locn%3Aaddress+%3FAddress+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3AfullAddress+%3FfullAddress+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3ApoBox+%3FpoBox+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fthoroughfare+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3AlocatorDesignator+%3FlocatorDesignator+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fthoroughfare+%3B%0D%0A++locn%3AlocatorDesignator+%3FlocatorDesignator%0D%0A++BIND%28CONCAT%28%3Fthoroughfare%2C+%27%2C+%27%2C+%3FlocatorDesignator%29+AS+%3Fstreet_name_and_nr%29+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fstreet_name%0D%0A++FILTER+NOT+EXISTS+%7B+%3FAddress+locn%3AlocatorDesignator+%3FlocatorDesignator+%7D+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AlocatorName+%3FlocatorName+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AaddressArea+%3FaddressArea+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3ApostName+%3FpostName+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3AadminUnitL2+%3FadminUnitL2+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3AadminUnitL1+%3FadminUnitL1+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3ApostCode+%3FpostCode+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AaddressId+%3FaddressId+.+%7D%0D%0A%7D+LIMIT+100&format=application%2Frdf%2Bxml&timeout=0&debug=on">RDF/XML</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A%3FResource+schema%3Aaddress+%3FAddress+.%0D%0A%3FAddress+a+schema%3APostalAddress+%3B%0D%0A++schema%3Aname+%3FfullAddress+%3B%0D%0A++schema%3AstreetAddress+%3Fstreet_name_and_nr+%3B%0D%0A++schema%3AstreetAddress+%3Fstreet_name+%3B%0D%0A++schema%3AaddressLocality+%3FpostName+%3B%0D%0A++schema%3AaddressRegion+%3FadminUnitL2+%3B%0D%0A++schema%3AaddressCountry+%3FadminUnitL1+%3B%0D%0A++schema%3ApostalCode+%3FpostCode%0D%0A%7D+WHERE+%7B%0D%0AOPTIONAL+%7B+%3FResource+locn%3Aaddress+%3FAddress+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3AfullAddress+%3FfullAddress+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3ApoBox+%3FpoBox+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fthoroughfare+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3AlocatorDesignator+%3FlocatorDesignator+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fthoroughfare+%3B%0D%0A++locn%3AlocatorDesignator+%3FlocatorDesignator%0D%0A++BIND%28CONCAT%28%3Fthoroughfare%2C+%27%2C+%27%2C+%3FlocatorDesignator%29+AS+%3Fstreet_name_and_nr%29+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fstreet_name%0D%0A++FILTER+NOT+EXISTS+%7B+%3FAddress+locn%3AlocatorDesignator+%3FlocatorDesignator+%7D+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AlocatorName+%3FlocatorName+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AaddressArea+%3FaddressArea+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3ApostName+%3FpostName+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3AadminUnitL2+%3FadminUnitL2+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3AadminUnitL1+%3FadminUnitL1+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3ApostCode+%3FpostCode+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AaddressId+%3FaddressId+.+%7D%0D%0A%7D+LIMIT+100&format=text%2Fturtle&timeout=0&debug=on">Turtle</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A%3FResource+schema%3Aaddress+%3FAddress+.%0D%0A%3FAddress+a+schema%3APostalAddress+%3B%0D%0A++schema%3Aname+%3FfullAddress+%3B%0D%0A++schema%3AstreetAddress+%3Fstreet_name_and_nr+%3B%0D%0A++schema%3AstreetAddress+%3Fstreet_name+%3B%0D%0A++schema%3AaddressLocality+%3FpostName+%3B%0D%0A++schema%3AaddressRegion+%3FadminUnitL2+%3B%0D%0A++schema%3AaddressCountry+%3FadminUnitL1+%3B%0D%0A++schema%3ApostalCode+%3FpostCode%0D%0A%7D+WHERE+%7B%0D%0AOPTIONAL+%7B+%3FResource+locn%3Aaddress+%3FAddress+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3AfullAddress+%3FfullAddress+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3ApoBox+%3FpoBox+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fthoroughfare+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3AlocatorDesignator+%3FlocatorDesignator+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fthoroughfare+%3B%0D%0A++locn%3AlocatorDesignator+%3FlocatorDesignator%0D%0A++BIND%28CONCAT%28%3Fthoroughfare%2C+%27%2C+%27%2C+%3FlocatorDesignator%29+AS+%3Fstreet_name_and_nr%29+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3Athoroughfare+%3Fstreet_name%0D%0A++FILTER+NOT+EXISTS+%7B+%3FAddress+locn%3AlocatorDesignator+%3FlocatorDesignator+%7D+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AlocatorName+%3FlocatorName+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AaddressArea+%3FaddressArea+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3ApostName+%3FpostName+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3AadminUnitL2+%3FadminUnitL2+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3AadminUnitL1+%3FadminUnitL1+.+%7D%0D%0AOPTIONAL+%7B+%3FAddress+locn%3ApostCode+%3FpostCode+.+%7D%0D%0A%23++OPTIONAL+%7B+%3FAddress+locn%3AaddressId+%3FaddressId+.+%7D%0D%0A%7D+LIMIT+100&format=application%2Fld%2Bjson&timeout=0&debug=on">JSON-LD</a>]</p>
 
-    PREFIX locn:   &lt;http://www.w3.org/ns/locn#&gt;
-    PREFIX schema: &lt;http://schema.org/&gt;
+    PREFIX locn:   <http://www.w3.org/ns/locn#>
+    PREFIX schema: <http://schema.org/>
 
     CONSTRUCT {
       ?Resource schema:address ?Address .
