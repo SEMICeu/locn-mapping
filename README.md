@@ -6,7 +6,7 @@ This work is still a draft. As such, it can be updated any time, and must be con
 
 Comments and queries should be sent to the [ISA Core Location Vocabulary Task Force](https://joinup.ec.europa.eu/asset/core_location/):
 
-core_location@joinup.ec.europa.eu
+<p><a href="mailto:core_location@joinup.ec.europa.eu">core_location@joinup.ec.europa.eu</a></p>
 
 # Content
 
