@@ -61,17 +61,17 @@
 <h2><a name="alignment-issues">Summary of alignment issues</a></h2>
 <p>The proposed mappings can be grouped into the following classes:</p>
 <dl>
-<dt>1-to-1 mappings with no mapping issues</dt>
+<dt><strong>1-to-1 mappings with no mapping issues</strong></dt>
 <dd>
 <p>This class covers the majority of the mapped terms (9 out of 16).</p>
 </dd>
-<dt>Many-to-1 mappings</dt>
+<dt><strong>Many-to-1 mappings</strong></dt>
 <dd>
 <p>This class includes 2 of the mapped terms, namely, <a target="_blank" title="http://www.w3.org/ns/locn#thoroughfare" href="http://www.w3.org/ns/locn#locn:thoroughfare"><code>locn:thoroughfare</code></a> (street name) and <a target="_blank" title="http://www.w3.org/ns/locn#locatorDesignator" href="http://www.w3.org/ns/locn#locn:locatorDesignator"><code>locn:locatorDesignator</code></a> (street number).</p>
 <p>LOCN models this information by using two distinct terms, whereas vCard and Schema.org merge this information into a single property&mdash;namely, <a target="_blank" title="http://www.w3.org/2006/vcard/ns#street-address" href="http://www.w3.org/TR/vcard-rdf/#d4e1218"><code>vcard:street-address</code></a> and <a target="_blank" title="http://schema.org/streetAddress" href="http://schema.org/streetAddress"><code>schema:streetAddress</code></a>, respectively.</p>
 <p>This is not an issue when mapping from LOCN to vCard and Schema.org (the two fields are merged into one, preserving all the information). On the other hand, mapping from vCard / Schema.org to LOCN may require further processing to identify the two different components of a street address (namely, street name and number).</p>
 </dd>
-<dt>Missing mappings</dt>
+<dt><strong>Missing mappings</strong></dt>
 <dd>
 <p>This class includes 4 of the mapped terms, namely, <a target="_blank" title="http://www.w3.org/ns/locn#addressId" href="http://www.w3.org/ns/locn#locn:addressId"><code>locn:addressId</code></a>, <a target="_blank" title="http://www.w3.org/ns/locn#poBox" href="http://www.w3.org/ns/locn#locn:poBox"><code>locn:poBox</code></a>, <a target="_blank" title="http://www.w3.org/ns/locn#locatorName" href="http://www.w3.org/ns/locn#locn:locatorName"><code>locn:locatorName</code></a>, and <a target="_blank" title="http://www.w3.org/ns/locn#addressArea" href="http://www.w3.org/ns/locn#locn:addressArea"><code>locn:addressArea</code></a>.</p>
 <p>More precisely:</p>
@@ -81,7 +81,7 @@
 <li><a target="_blank" title="http://www.w3.org/ns/locn#locatorName" href="http://www.w3.org/ns/locn#locn:locatorName"><code>locn:locatorName</code></a>, and <a target="_blank" title="http://www.w3.org/ns/locn#addressArea" href="http://www.w3.org/ns/locn#locn:addressArea"><code>locn:addressArea</code></a> are not supported by vCard and Schema.org</li>
 </ul>
 </dd>
-<dt>Mappings with encoding issues</dt>
+<dt><strong>Mappings with encoding issues</strong></dt>
 <dd><p>This class includes 1 of the mapped terms, namely, <a target="_blank" title="http://www.w3.org/ns/locn#geometry" href="http://www.w3.org/ns/locn#locn:geometry"><code>locn:geometry</code></a>.</p>
 <p>vCard and Schema.org use specific encodings / representations for geometries, whereas LOCN supports any type of geometry encoding / representation.</p>
 <p>This is not an issue when mapping from vCard / Schema.org to LOCN. On the other hand, mapping from LOCN to vCard and Schema.org may require further processing to convert the original geometry encoding / representation to the target one.</p></dd>
