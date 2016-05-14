@@ -13,19 +13,19 @@
 </section>
 <nav id="toc">
 <h2>Table of contents</h2>
-<ol>
+<ul>
 <li><a href="#background">Background</a></li>
 <li><a href="#methodology">Methodology</a></li>
 <li><a href="#alignment-issues">Summary of alignment issues</a></li>
 <li><a href="#used-namespaces">Used namespaces</a></li>
 <li><a href="#mapping-summary">Mapping summary</a></li>
 <li><a href="#formal-definition">Formal definition</a>
-<ol>
+<ul>
 <li><a href="#formal-definition-locn-2-vcard">LOCN to vCard mapping</a></li>
 <li><a href="#formal-definition-locn-2-schema.org">LOCN to Schema.org mapping</a></li>
-</ol>
+</ul>
 </li>
-</ol>
+</ul>
 </nav>
 <section id="background">
 <h2><a name="background">Background</a></h2>
