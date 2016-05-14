@@ -212,7 +212,8 @@
 <td>TBD</td>
 <td>TBD</td>
 <td>
-<p>In LOCN, <a target="_blank" title="http://www.w3.org/ns/locn#locatorName" href="http://www.w3.org/ns/locn#locn:locatorName"><code>locn:locatorName</code></a> is defined as follows: <q>Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building.</q></p>
+<p>In LOCN, <a target="_blank" title="http://www.w3.org/ns/locn#locatorName" href="http://www.w3.org/ns/locn#locn:locatorName"><code>locn:locatorName</code></a> is defined as follows:</p>
+<blockquote>Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building.</blockquote>
 <p>vCard includes a specific property, namely, <a target="_blank" title="http://www.w3.org/2006/vcard/ns#extended-address" href="http://www.w3.org/TR/vcard-rdf/#d4e860"><code>vcard:extended-address</code></a>, but its use has been deprecated.</p>
 <p>Schema.org does not define terms to model this information.</p>
 <p>Possible options:</p>
