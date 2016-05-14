@@ -229,7 +229,8 @@
 <td>TBD</td>
 <td>TBD</td>
 <td>
-<p>In LOCN, <a target="_blank" title="http://www.w3.org/ns/locn#addressArea" href="http://www.w3.org/ns/locn#locn:addressArea"><code>locn:addressArea</code></a> is defined as follows: <q>The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit. This would typically be part of a city, a neighbourhood or village. [&hellip;]</q></p>
+<p>In LOCN, <a target="_blank" title="http://www.w3.org/ns/locn#addressArea" href="http://www.w3.org/ns/locn#locn:addressArea"><code>locn:addressArea</code></a> is defined as follows:</p>
+<blockquote>The name or names of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit. This would typically be part of a city, a neighbourhood or village. [&hellip;]</blockquote>
 <p>vCard and Schema.org do not define terms to model this information.</p>
 <p>Possible options:</p>
 <ol>
