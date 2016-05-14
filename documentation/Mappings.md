@@ -269,8 +269,8 @@
 <td>TBD</td>
 <td>
 <p>In vCard, <a target="_blank" title="http://www.w3.org/2006/vcard/ns#hasUID" href="http://www.w3.org/TR/vcard-rdf/#d4e592"><code>vcard:hasUID</code></a> is formally defined as an <code>owl:ObjectProperty</code>, and therefore its value cannot be a literal. However, this seems to be in conflict with its informal definition, which is less restrictive&mdash;quoting:</p>
-<blockquote>[&hellip;] a value that represents a globally unique identifier corresponding to the object</blockquote>
-<p>(<strong>to be verified</strong>).</p>
+<blockquote>[&hellip;] a value that represents a globally unique identifier corresponding to the object.</blockquote>
+<p>(<strong>to be verified</strong>)</p>
 <p>Schema.org does not define terms to model this information.</p>
 </td>
 </tr>
