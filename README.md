@@ -4,7 +4,9 @@ This repository includes documentation and resources concerning a proposal for m
     
 This work is still a draft. As such, it can be updated any time, and must be considered as unstable.
 
-Comments and queries should be sent to the [ISA Core Location Vocabulary Task Force](https://joinup.ec.europa.eu/asset/core_location/) via core_location@joinup.ec.europa.eu
+Comments and queries should be sent to the [ISA Core Location Vocabulary Task Force](https://joinup.ec.europa.eu/asset/core_location/):
+
+    core_location@joinup.ec.europa.eu
 
 # Content
 
