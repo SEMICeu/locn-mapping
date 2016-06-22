@@ -13,12 +13,12 @@
 <tbody>
 <tr>
 <td><a href="./locn-to-schema-org.rdf"><code>locn-to-schema-org.rdf</code></a></td>
-<td><a title="HTML preview" href="http://geodcat-ap.semic.eu:8890/skos-match-viewer/?alignments=https%3A%2F%2Fwebgate.ec.europa.eu%2FCITnet%2Fstash%2Fprojects%2FODCKAN%2Frepos%2Fiso-19139-to-dcat-ap%2Fbrowse%2Falignments%2Flocn-to-schema-org.rdf%3Fraw">Alignments between LOCN and Schema.org</a></td>
+<td><a title="HTML preview" href="http://geodcat-ap.semic.eu:8890/skos-match-viewer/?alignments=https%3A%2F%2Fwebgate.ec.europa.eu%2FCITnet%2Fstash%2Fprojects%2FODCKAN%2Frepos%2Flocn-mapping%2Fbrowse%2Fskos%2Flocn-to-schema-org.rdf%3Fraw">Alignments between LOCN and Schema.org</a></td>
 <td>Under development</td>
 </tr>
 <tr>
 <td><a href="./locn-to-vcard.rdf"><code>locn-to-vcard.rdf</code></a></td>
-<td><a title="HTML preview" href="http://geodcat-ap.semic.eu:8890/skos-match-viewer/?alignments=https%3A%2F%2Fwebgate.ec.europa.eu%2FCITnet%2Fstash%2Fprojects%2FODCKAN%2Frepos%2Fiso-19139-to-dcat-ap%2Fbrowse%2Falignments%2Flocn-to-vcard.rdf%3Fraw">Alignments between LOCN and vCard</a></td>
+<td><a title="HTML preview" href="http://geodcat-ap.semic.eu:8890/skos-match-viewer/?alignments=https%3A%2F%2Fwebgate.ec.europa.eu%2FCITnet%2Fstash%2Fprojects%2FODCKAN%2Frepos%2Flocn-mapping%2Fbrowse%2Fskos%2Flocn-to-vcard.rdf%3Fraw">Alignments between LOCN and vCard</a></td>
 <td>Under development</td>
 </tr>
 </table>
