@@ -19,10 +19,11 @@
 <li><a href="#alignment-issues">Summary of alignment issues</a></li>
 <li><a href="#used-namespaces">Used namespaces</a></li>
 <li><a href="#mapping-summary">Mapping summary</a></li>
-<li><a href="#formal-definition">SPARQL implementation</a>
+<li><a href="#formal-definition-skos">SKOS definition</a>
+<li><a href="#formal-definition-sparql">SPARQL implementation</a>
 <ul>
-<li><a href="#formal-definition-locn-2-vcard">LOCN to vCard mapping</a></li>
-<li><a href="#formal-definition-locn-2-schema.org">LOCN to Schema.org mapping</a></li>
+<li><a href="#formal-definition-sparql-locn-2-vcard">LOCN to vCard mapping</a></li>
+<li><a href="#formal-definition-sparql-locn-2-schema.org">LOCN to Schema.org mapping</a></li>
 </ul>
 </li>
 </ul>
@@ -129,7 +130,7 @@
 </section>
 <section id="mapping-summary">
 <h2><a name="mapping-summary">Mapping summary</a></h2>
-<p>The following table provides an overview of the proposed mappings between the <a target="_blank" href="http://www.w3.org/ns/locn">LOCN</a> and <a target="_blank" href="http://www.w3.org/TR/vcard-rdf/">vCard</a> and <a target="_blank" href="http://schema.org/">Schema.org</a>.</p>
+<p>The following table provides an overview of the proposed mappings between <a target="_blank" href="http://www.w3.org/ns/locn">LOCN</a>, <a target="_blank" href="http://www.w3.org/TR/vcard-rdf/">vCard</a>, and <a target="_blank" href="http://schema.org/">Schema.org</a>.</p>
 <table>
 <thead>
 <tr>
@@ -277,12 +278,16 @@
 </tbody>
 </table>
 </section>
-<section id="formal-definition">
-<h2><a name="formal-definition">SPARQL implementation</a></h2>
+<section id="formal-definition-skos">
+<h2><a name="formal-definition-skos">SKOS definition</a></h2>
+<p>A tentative SKOS definitions of the mappings is available in a [separate folder](../skos/).</p>
+</section>
+<section id="formal-definition-sparql">
+<h2><a name="formal-definition-sparql">SPARQL implementation</a></h2>
 <p>This section illustrates a tentative implementation of the defined mappings, in the form of <a target="_blank" href="https://www.w3.org/TR/sparql11-query/#construct">SPARQL <code>CONSTRUCT</code> queries</a>.</p>
-<p>The defined SPARQL queries can be tested on the <a target="_blank" href="http://location.testproject.eu/sparql">SPARQL endpoint</a> of <a target="_blank" href="http://location.testproject.eu/">ISA Core Location Pilot</a>.</p>
-<section id="formal-definition-locn-2-vcard">
-<h3><a name="formal-definition-locn-2-vcard">LOCN to vCard mapping</a></h3>
+<p>The defined SPARQL queries can be tested on the <a target="_blank" href="http://location.testproject.eu/sparql">SPARQL endpoint</a> of the <a target="_blank" href="http://location.testproject.eu/">ISA Core Location Pilot</a>.</p>
+<section id="formal-definition-sparql-locn-2-vcard">
+<h3><a name="formal-definition-sparql-locn-2-vcard">LOCN to vCard mapping</a></h3>
 <section>
 <h4>Mapping rules for <a target="_blank" title="http://www.w3.org/ns/locn#geographicName" href="http://www.w3.org/ns/locn#locn:geographicName"><code>locn:geographicName</code></a></h4>
 <p>Test it on the <a target="_blank" href="http://location.testproject.eu/sparql">SPARQL endpoint</a> of <a target="_blank" href="http://location.testproject.eu/">ISA Core Location Pilot</a> [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FLocation+a+vcard%3ALocation+%3B%0D%0A++++vcard%3Afn+%3FgeographicName%0D%0A%7D+WHERE+%7B%0D%0A++%3FLocation+locn%3AgeographicName+%3FgeographicName%0D%0A%7D+LIMIT+100&format=application%2Frdf%2Bxml&timeout=0&debug=on">RDF/XML</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FLocation+a+vcard%3ALocation+%3B%0D%0A++++vcard%3Afn+%3FgeographicName%0D%0A%7D+WHERE+%7B%0D%0A++%3FLocation+locn%3AgeographicName+%3FgeographicName%0D%0A%7D+LIMIT+100&format=text%2Fturtle&timeout=0&debug=on">Turtle</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FLocation+a+vcard%3ALocation+%3B%0D%0A++++vcard%3Afn+%3FgeographicName%0D%0A%7D+WHERE+%7B%0D%0A++%3FLocation+locn%3AgeographicName+%3FgeographicName%0D%0A%7D+LIMIT+100&format=application%2Fld%2Bjson&timeout=0&debug=on">JSON-LD</a>]</p>
@@ -352,8 +357,8 @@
 
 </section>
 </section>
-<section id="formal-definition-locn-2-schema.org">
-<h3><a name="formal-definition-locn-2-schema.org">LOCN to Schema.org mapping</a></h3>
+<section id="formal-definition-sparql-locn-2-schema.org">
+<h3><a name="formal-definition-sparql-locn-2-schema.org">LOCN to Schema.org mapping</a></h3>
 <section>
 <h4>Mapping rules for <a target="_blank" title="http://www.w3.org/ns/locn#geographicName" href="http://www.w3.org/ns/locn#locn:geographicName"><code>locn:geographicName</code></a></h4>
 <p>Test it on the <a target="_blank" href="http://location.testproject.eu/sparql">SPARQL endpoint</a> of <a target="_blank" href="http://location.testproject.eu/">ISA Core Location Pilot</a> [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A%3FLocation+a+schema%3APlace+%3B%0D%0A++schema%3Aname+%3FgeographicName%0D%0A%7D+WHERE+%7B%0D%0A%3FLocation+locn%3AgeographicName+%3FgeographicName%0D%0A%7D+LIMIT+100&format=application%2Frdf%2Bxml&timeout=0&debug=on">RDF/XML</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A%3FLocation+a+schema%3APlace+%3B%0D%0A++schema%3Aname+%3FgeographicName%0D%0A%7D+WHERE+%7B%0D%0A%3FLocation+locn%3AgeographicName+%3FgeographicName%0D%0A%7D+LIMIT+100&format=text%2Fturtle&timeout=0&debug=on">Turtle</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A+++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+schema%3A+%3Chttp%3A%2F%2Fschema.org%2F%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A%3FLocation+a+schema%3APlace+%3B%0D%0A++schema%3Aname+%3FgeographicName%0D%0A%7D+WHERE+%7B%0D%0A%3FLocation+locn%3AgeographicName+%3FgeographicName%0D%0A%7D+LIMIT+100&format=application%2Fld%2Bjson&timeout=0&debug=on">JSON-LD</a>]</p>
