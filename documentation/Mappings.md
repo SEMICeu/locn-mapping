@@ -280,7 +280,7 @@
 </section>
 <section id="formal-definition-skos">
 <h2><a name="formal-definition-skos">SKOS definition</a></h2>
-<p>A tentative SKOS definitions of the mappings is available in a [separate folder](../skos/).</p>
+<p>A tentative SKOS definitions of the mappings is available in a <a href="../skos/">separate folder</a>.</p>
 </section>
 <section id="formal-definition-sparql">
 <h2><a name="formal-definition-sparql">SPARQL implementation</a></h2>
