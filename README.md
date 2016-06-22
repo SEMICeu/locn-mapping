@@ -13,7 +13,7 @@ Comments and queries should be sent to the [ISA Core Location Vocabulary Task Fo
 * [`documentation/`](./documentation/): Folder containing documentation on the defined mappings
 * [`LICENCE.md`](./LICENCE.md): The licence for the resources available from this repository.
 * [`README.md`](./README.md): This document. 
-* [`locn-to-schema-org.rdf`](./locn-schema-org.rdf): SKOS definition of the mappings between LOCN and Schema.org. 
+* [`skos/`](./skos/): SKOS definition of the mappings between LOCN, vCard, and Schema.org. 
   
 #  Credits
   
