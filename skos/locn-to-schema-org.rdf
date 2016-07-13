@@ -58,7 +58,7 @@
 <!-- Alignments -->
 
   <rdf:Description rdf:about="http://purl.org/dc/terms/Location">
-    <skos:exact rdf:resource="http://schema.org/Place"/>
+    <skos:exactMatch rdf:resource="http://schema.org/Place"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="http://www.w3.org/ns/locn#geographicName">
@@ -109,19 +109,19 @@
   </rdf:Description>
 -->
   <rdf:Description rdf:about="http://www.w3.org/ns/locn#postName">
-    <skos:closeMatch rdf:resource="http://schema.org/addressLocality"/>
+    <skos:exactMatch rdf:resource="http://schema.org/addressLocality"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="http://www.w3.org/ns/locn#adminUnitL2">
-    <skos:closeMatch rdf:resource="http://schema.org/addressRegion"/>
+    <skos:exactMatch rdf:resource="http://schema.org/addressRegion"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="http://www.w3.org/ns/locn#adminUnitL1">
-    <skos:closeMatch rdf:resource="http://schema.org/addressCountry"/>
+    <skos:exactMatch rdf:resource="http://schema.org/addressCountry"/>
   </rdf:Description>
 
   <rdf:Description rdf:about="http://www.w3.org/ns/locn#postCode">
-    <skos:closeMatch rdf:resource="http://schema.org/postalCode"/>
+    <skos:exactMatch rdf:resource="http://schema.org/postalCode"/>
   </rdf:Description>
 <!-- TBD
   <rdf:Description rdf:about="http://www.w3.org/ns/locn#addressId">
