@@ -36,7 +36,7 @@
 <!-- Aligned thesauri -->
 
   <rdf:Description rdf:about="http://www.w3.org/ns/locn">
-    <align:location rdf:datatype="{$xsd}anyURI">http://www.w3.org/ns/locn.rdf</align:location>
+    <align:location rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/ns/locn.rdf</align:location>
     <dcat:distribution>
       <dcat:Distribution>
         <dcat:downloadURL rdf:resource="http://www.w3.org/ns/locn.rdf"/>
@@ -46,7 +46,7 @@
   </rdf:Description>
 
   <rdf:Description rdf:about="http://schema.org/">
-    <align:location rdf:datatype="{$xsd}anyURI">https://www.w3.org/2012/pyRdfa/extract?uri=http%3A%2F%2Fschema.org%2Fdocs%2Fschema_org_rdfa.html&amp;format=xml&amp;rdfagraph=output&amp;vocab_expansion=false&amp;rdfa_lite=false&amp;embedded_rdf=true&amp;space_preserve=true&amp;vocab_cache=true&amp;vocab_cache_report=false&amp;vocab_cache_refresh=false</align:location>
+    <align:location rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.w3.org/2012/pyRdfa/extract?uri=http%3A%2F%2Fschema.org%2Fdocs%2Fschema_org_rdfa.html&amp;format=xml&amp;rdfagraph=output&amp;vocab_expansion=false&amp;rdfa_lite=false&amp;embedded_rdf=true&amp;space_preserve=true&amp;vocab_cache=true&amp;vocab_cache_report=false&amp;vocab_cache_refresh=false</align:location>
     <dcat:distribution>
       <dcat:Distribution>
         <dcat:downloadURL rdf:resource="https://www.w3.org/2012/pyRdfa/extract?uri=http%3A%2F%2Fschema.org%2Fdocs%2Fschema_org_rdfa.html&amp;format=xml&amp;rdfagraph=output&amp;vocab_expansion=false&amp;rdfa_lite=false&amp;embedded_rdf=true&amp;space_preserve=true&amp;vocab_cache=true&amp;vocab_cache_report=false&amp;vocab_cache_refresh=false"/>
