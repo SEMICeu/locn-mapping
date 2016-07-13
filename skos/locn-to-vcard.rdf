@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF
+  xmlns:adms  = "http://www.w3.org/ns/adms#"
+  xmlns:align = "http://knowledgeweb.semanticweb.org/heterogeneity/alignment#"
+  xmlns:dc    = "http://purl.org/dc/elements/1.1/"
+  xmlns:dcat  = "http://www.w3.org/ns/dcat#"
+  xmlns:dct   = "http://purl.org/dc/terms/"
+  xmlns:foaf  = "http://xmlns.com/foaf/0.1/"
+  xmlns:owl   = "http://www.w3.org/2002/07/owl#"
+  xmlns:rdf   = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs  = "http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:skos  = "http://www.w3.org/2004/02/skos/core#"
+  xmlns:vcard = "http://www.w3.org/2006/vcard/ns#"
+  xmlns:xsd   = "http://www.w3.org/2001/XMLSchema#"
+>
+
+  <rdf:Description rdf:about="">
+    <rdf:type rdf:resource="http://knowledgeweb.semanticweb.org/heterogeneity/alignment#Alignment"/>
+    <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+    <dct:type rdf:resource="http://purl.org/adms/assettype/Mapping"/>
+    <adms:interoperabilityLevel rdf:resource="http://purl.org/adms/interoperabilitylevel/Semantic"/>
+    <foaf:page rdf:resource="https://webgate.ec.europa.eu/CITnet/stash/projects/ODCKAN/repos/locn-mapping/browse/documentation/"/>
+    <adms:representationTechnique rdf:resource="http://purl.org/adms/representationtechnique/SKOS"/>
+    <align:onto1 rdf:resource="http://www.w3.org/ns/locn"/>
+    <align:onto2 rdf:resource="http://www.w3.org/2006/vcard/ns"/>
+    <rdfs:label xml:lang="en">Alignments between the ISA Core Location Vocabulary and the vCard Ontology</rdfs:label>
+    <dct:title xml:lang="en">Alignments between the ISA Core Location Vocabulary and the vCard Ontology</dct:title>
+    <adms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:downloadURL rdf:resource="https://webgate.ec.europa.eu/CITnet/stash/projects/ODCKAN/repos/locn-mapping/browse/locn-to-vcard.rdf?raw"/>
+        <dct:format rdf:resource="http://www.w3.org/ns/formats/data/RDF_XML"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+  </rdf:Description>
+
+<!-- Aligned thesauri -->
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn">
+    <align:location rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.w3.org/ns/locn.rdf</align:location>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:downloadURL rdf:resource="http://www.w3.org/ns/locn.rdf"/>
+        <dct:format rdf:resource="http://www.w3.org/ns/formats/data/RDF_XML"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/2006/vcard/ns#">
+    <align:location rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.w3.org/2006/vcard/ns.rdf</align:location>
+    <dcat:distribution>
+      <dcat:Distribution>
+        <dcat:downloadURL rdf:resource="https://www.w3.org/2006/vcard/ns.rdf"/>
+        <dct:format rdf:resource="http://www.w3.org/ns/formats/data/RDF_XML"/>
+      </dcat:Distribution>
+    </dcat:distribution>
+  </rdf:Description>
+
+<!-- Alignments -->
+
+  <rdf:Description rdf:about="http://purl.org/dc/terms/Location">
+    <skos:exactMatch rdf:resource="http://www.w3.org/2006/vcard/ns#Location"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#geographicName">
+    <skos:broadMatch rdf:resource="http://www.w3.org/2006/vcard/ns#fn"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#geometry">
+    <skos:closeMatch rdf:resource="http://www.w3.org/2006/vcard/ns#hasGeo"/>
+  </rdf:Description>
+<!--
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#Geometry">
+    <skos:narrowMatch rdf:resource="http://www.w3.org/2006/vcard/ns#GeoCoordinates"/>
+    <skos:narrowMatch rdf:resource="http://www.w3.org/2006/vcard/ns#GeoShape"/>
+    <skos:narrowMatch rdf:resource="http://www.w3.org/2006/vcard/ns#GeoCircle"/>
+  </rdf:Description>
+-->
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#address">
+    <skos:closeMatch rdf:resource="http://www.w3.org/2006/vcard/ns#hasAddress"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#Address">
+    <skos:closeMatch rdf:resource="http://www.w3.org/2006/vcard/ns#Address"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#fullAddress">
+    <skos:broadMatch rdf:resource="http://www.w3.org/2006/vcard/ns#fn"/>
+  </rdf:Description>
+<!-- TBD
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#poBox">
+    <skos:exactMatch rdf:resource="http://www.w3.org/2006/vcard/ns#??"/>
+  </rdf:Description>
+-->
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#thoroughfare">
+    <skos:broadMatch rdf:resource="http://www.w3.org/2006/vcard/ns#street-address"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#locatorDesignator">
+    <skos:broadMatch rdf:resource="http://www.w3.org/2006/vcard/ns#street-address"/>
+  </rdf:Description>
+<!-- TBD
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#locatorName">
+    <skos:broadMatch rdf:resource="http://www.w3.org/2006/vcard/ns#??"/>
+  </rdf:Description>
+-->
+<!-- TBD
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#addressArea">
+    <skos:broadMatch rdf:resource="http://www.w3.org/2006/vcard/ns#??"/>
+  </rdf:Description>
+-->
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#postName">
+    <skos:exactMatch rdf:resource="http://www.w3.org/2006/vcard/ns#locality"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#adminUnitL2">
+    <skos:exactMatch rdf:resource="http://www.w3.org/2006/vcard/ns#region"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#adminUnitL1">
+    <skos:exactMatch rdf:resource="http://www.w3.org/2006/vcard/ns#country-name"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#postCode">
+    <skos:exactMatch rdf:resource="http://www.w3.org/2006/vcard/ns#postal-code"/>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://www.w3.org/ns/locn#addressId">
+    <skos:broadMatch rdf:resource="http://www.w3.org/2006/vcard/ns#hasUID"/>
+  </rdf:Description>
+
+</rdf:RDF>
