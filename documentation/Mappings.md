@@ -165,6 +165,17 @@
 </td>
 </tr>
 <tr>
+<td rowspan="2"><a target="_blank" title="http://www.w3.org/ns/locn#Geometry" href="http://www.w3.org/ns/locn#locn:Geometry"><code>locn:Geometry</code></a></td>
+<td rowspan="2">N/A</td>
+<td><a target="_blank" title="http://schema.org/geo" href="http://schema.org/GeoCoordinates"><code>schema:GeoCoordinates</code></a></td>
+</tr>
+<tr>
+<td><a target="_blank" title="http://schema.org/geo" href="http://schema.org/GeoShape"><code>schema:GeoShape</code></a></td>
+<td>
+<p>See comments on property <code>locn:geometry</code></p>
+</td>
+</tr>
+<tr>
 <td><a target="_blank" title="http://www.w3.org/ns/locn#address" href="http://www.w3.org/ns/locn#locn:address"><code>locn:address</code></a></td>
 <td><a target="_blank" title="http://www.w3.org/2006/vcard/ns#hasAddress" href="http://www.w3.org/TR/vcard-rdf/#d4e101"><code>vcard:hasAddress</code></a></td>
 <td><a target="_blank" title="http://schema.org/address" href="http://schema.org/address"><code>schema:address</code></a></td>
@@ -305,6 +316,7 @@
 </section>
 <section>
 <h4>Mapping rules for <a target="_blank" title="http://www.w3.org/ns/locn#geometry" href="http://www.w3.org/ns/locn#locn:geometry"><code>locn:geometry</code></a></h4>
+<p><strong>NB</strong>: This mapping does not addresses the geometry encoding issues mentioned in the mapping summary in relation to the mapping property <code>locn:geometry</code>.</p>
 <p>Test it on the <a target="_blank" href="http://location.testproject.eu/sparql">SPARQL endpoint</a> of <a target="_blank" href="http://location.testproject.eu/">ISA Core Location Pilot</a> [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FResource+vcard%3AhasGeo+%3Fgeometry%0D%0A%7D+WHERE+%7B%0D%0A++%3FResource+locn%3Ageometry+%3Fgeometry%0D%0A%7D+LIMIT+100&format=application%2Frdf%2Bxml&timeout=0&debug=on">RDF/XML</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FResource+vcard%3AhasGeo+%3Fgeometry%0D%0A%7D+WHERE+%7B%0D%0A++%3FResource+locn%3Ageometry+%3Fgeometry%0D%0A%7D+LIMIT+100&format=text%2Fturtle&timeout=0&debug=on">Turtle</a>] [<a target="_blank" href="http://location.testproject.eu/sparql?default-graph-uri=&query=PREFIX+locn%3A++%3Chttp%3A%2F%2Fwww.w3.org%2Fns%2Flocn%23%3E%0D%0APREFIX+vcard%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2006%2Fvcard%2Fns%23%3E%0D%0A%0D%0ACONSTRUCT+%7B%0D%0A++%3FResource+vcard%3AhasGeo+%3Fgeometry%0D%0A%7D+WHERE+%7B%0D%0A++%3FResource+locn%3Ageometry+%3Fgeometry%0D%0A%7D+LIMIT+100&format=application%2Fld%2Bjson&timeout=0&debug=on">JSON-LD</a>]</p>
 
     PREFIX locn:  <http://www.w3.org/ns/locn#>
@@ -316,6 +328,11 @@
       ?Resource locn:geometry ?geometry
     }
 
+</section>
+<section>
+<h4>Mapping rules for <a target="_blank" title="http://www.w3.org/ns/locn#Geometry" href="http://www.w3.org/ns/locn#locn:Geometry"><code>locn:Geometry</code></a></h4>
+<p>Because of the geometry encoding issues reported in the mapping summary about the mapping property <code>locn:geometry</code>, the mapping of class <code>locn:Geometry</code> requires syntax processing that is not addressed in the current version of this document.</p>
+<p>For this reason, no mapping rule is defined here for class <code>locn:Geometry</code>.</p>
 </section>
 <section>
 <h4>Mapping rules for <a target="_blank" title="http://www.w3.org/ns/locn#Address" href="http://www.w3.org/ns/locn#locn:Address"><code>locn:Address</code></a></h4>
