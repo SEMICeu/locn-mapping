@@ -168,12 +168,12 @@
 <td rowspan="2"><a target="_blank" title="http://www.w3.org/ns/locn#Geometry" href="http://www.w3.org/ns/locn#locn:Geometry"><code>locn:Geometry</code></a></td>
 <td rowspan="2">N/A</td>
 <td><a target="_blank" title="http://schema.org/geo" href="http://schema.org/GeoCoordinates"><code>schema:GeoCoordinates</code></a></td>
+<td rowspan="2">
+<p>See comments on property <code>locn:geometry</code></p>
+</td>
 </tr>
 <tr>
 <td><a target="_blank" title="http://schema.org/geo" href="http://schema.org/GeoShape"><code>schema:GeoShape</code></a></td>
-<td>
-<p>See comments on property <code>locn:geometry</code></p>
-</td>
 </tr>
 <tr>
 <td><a target="_blank" title="http://www.w3.org/ns/locn#address" href="http://www.w3.org/ns/locn#locn:address"><code>locn:address</code></a></td>
