@@ -44,7 +44,7 @@
 <ul>
 <li><a target="_blank" href="https://www.w3.org/ns/locn">ISA Core Location Vocabulary</a> (<time datetime="2015-03-23">23 March 2015</time>)</li>
 <li><a target="_blank" href="https://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/">vCard Ontology - for describing People and Organizations</a> (<time datetime="2014-05-22">22 May 2014</time>)</li>
-<li><a target="_blank" href="http://schema.org/version/2.2/">Schema.org 2.2</a> (<time datetime="2015-11-05">5 November 2015</time>)</li>
+<li><a target="_blank" href="http://schema.org/version/3.1/">Schema.org 3.1</a> (<time datetime="2016-08-09">9 August 2016</time>)</li>
 </ul>
 <p>
 <p>For the mappings, existing work has been taken into account concerning the mapping of Schema.org to other metadata standards. In particular:</p>
