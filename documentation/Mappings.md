@@ -9,7 +9,7 @@
 <section id="sotd">
 <h2>Status of this document</h2>
 <p>This document is a draft meant to report work in progress. As such, it can be updated any time and it must be considered as unstable.</p>
-<p>Comments and queries should be sent to the <a href="https://joinup.ec.europa.eu/asset/core_location/">ISA Core Location Vocabulary Task Force</a> via <a href="mailto:core_location@joinup.ec.europa.eu">core_location@joinup.ec.europa.eu</a>.</p>
+<p>Comments and queries should be sent to the <a href="https://joinup.ec.europa.eu/asset/core_location/">ISA Core Location Vocabulary Task Force</a> via <a href="https://github.com/SEMICeu/Core-Location-Vocabulary/issues">the issue tracker of the dedicated GitHub repository</a>.</p>
 </section>
 <nav id="toc">
 <h2>Table of contents</h2>
