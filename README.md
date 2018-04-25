@@ -14,7 +14,7 @@ https://github.com/SEMICeu/Core-Location-Vocabulary/issues
 * [`LICENCE.md`](./LICENCE.md): The licence for the resources available from this repository.
 * [`README.md`](./README.md): This document. 
 * [`skos/`](./skos/): SKOS definition of the mappings between LOCN, vCard, and Schema.org. 
-* [`sparql/`](./skos/): SPARQL definition of the mappings between LOCN, vCard, and Schema.org. 
+* [`sparql/`](./sparql/): SPARQL definition of the mappings between LOCN, vCard, and Schema.org. 
   
 #  Credits
   
