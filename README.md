@@ -4,9 +4,9 @@ This repository includes documentation and resources concerning a proposal for m
     
 This work is still a draft. As such, it can be updated any time, and must be considered as unstable.
 
-Comments and queries should be sent to the [ISA Core Location Vocabulary Task Force](https://joinup.ec.europa.eu/asset/core_location/):
+Comments and queries should be sent to the [ISA Core Location Vocabulary Task Force](https://joinup.ec.europa.eu/asset/core_location/) via the issue tracker of the dedicated GitHub repository:
 
-    core_location@joinup.ec.europa.eu
+https://github.com/SEMICeu/Core-Location-Vocabulary/issues
 
 # Content
 
@@ -14,6 +14,7 @@ Comments and queries should be sent to the [ISA Core Location Vocabulary Task Fo
 * [`LICENCE.md`](./LICENCE.md): The licence for the resources available from this repository.
 * [`README.md`](./README.md): This document. 
 * [`skos/`](./skos/): SKOS definition of the mappings between LOCN, vCard, and Schema.org. 
+* [`sparql/`](./skos/): SPARQL definition of the mappings between LOCN, vCard, and Schema.org. 
   
 #  Credits
   
