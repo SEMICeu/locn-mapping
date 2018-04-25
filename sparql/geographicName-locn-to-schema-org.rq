@@ -1,0 +1,9 @@
+PREFIX locn:   <http://www.w3.org/ns/locn#>
+PREFIX schema: <http://schema.org/>
+
+CONSTRUCT {
+  ?Location a schema:Place ;
+    schema:name ?geographicName
+} WHERE {
+  ?Location locn:geographicName ?geographicName
+}

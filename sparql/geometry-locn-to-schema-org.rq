@@ -1,0 +1,8 @@
+PREFIX locn:   <http://www.w3.org/ns/locn#>
+PREFIX schema: <http://schema.org/>
+
+CONSTRUCT {
+  ?Resource schema:geo ?geometry
+} WHERE {
+  ?Resource locn:geometry ?geometry
+}

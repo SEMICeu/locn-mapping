@@ -1,0 +1,33 @@
+PREFIX locn:  <http://www.w3.org/ns/locn#>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+
+CONSTRUCT {
+  ?Resource vcard:hasAddress ?Address .
+  ?Address a vcard:Address ;
+    vcard:fn ?fullAddress ;
+    vcard:street-address ?street_name_and_nr ;
+    vcard:street-address ?street_name ;
+    vcard:locality ?postName ;
+    vcard:region ?adminUnitL2 ;
+    vcard:country-name ?adminUnitL1 ;
+    vcard:postal-code ?postCode ;
+    vcard:hasUID ?addressId
+} WHERE {
+  OPTIONAL { ?Resource locn:address ?Address . }
+  OPTIONAL { ?Address locn:fullAddress ?fullAddress . }
+#  OPTIONAL { ?Address locn:poBox ?poBox . }
+  OPTIONAL { ?Address locn:thoroughfare ?thoroughfare . }
+  OPTIONAL { ?Address locn:locatorDesignator ?locatorDesignator . }
+  OPTIONAL { ?Address locn:thoroughfare ?thoroughfare ;
+    locn:locatorDesignator ?locatorDesignator
+    BIND(CONCAT(?thoroughfare, ', ', ?locatorDesignator) AS ?street_name_and_nr) . }
+  OPTIONAL { ?Address locn:thoroughfare ?street_name
+    FILTER NOT EXISTS { ?Address locn:locatorDesignator ?locatorDesignator } . }
+#  OPTIONAL { ?Address locn:locatorName ?locatorName . }
+#  OPTIONAL { ?Address locn:addressArea ?addressArea . }
+  OPTIONAL { ?Address locn:postName ?postName . }
+  OPTIONAL { ?Address locn:adminUnitL2 ?adminUnitL2 . }
+  OPTIONAL { ?Address locn:adminUnitL1 ?adminUnitL1 . }
+  OPTIONAL { ?Address locn:postCode ?postCode . }
+  OPTIONAL { ?Address locn:addressId ?addressId . }
+}

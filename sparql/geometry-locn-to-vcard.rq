@@ -1,0 +1,8 @@
+PREFIX locn:  <http://www.w3.org/ns/locn#>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+
+CONSTRUCT {
+  ?Resource vcard:hasGeo ?geometry
+} WHERE {
+  ?Resource locn:geometry ?geometry
+}

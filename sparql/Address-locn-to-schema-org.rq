@@ -1,0 +1,32 @@
+PREFIX locn:   <http://www.w3.org/ns/locn#>
+PREFIX schema: <http://schema.org/>
+
+CONSTRUCT {
+  ?Resource schema:address ?Address .
+  ?Address a schema:PostalAddress ;
+    schema:name ?fullAddress ;
+    schema:streetAddress ?street_name_and_nr ;
+    schema:streetAddress ?street_name ;
+    schema:addressLocality ?postName ;
+    schema:addressRegion ?adminUnitL2 ;
+    schema:addressCountry ?adminUnitL1 ;
+    schema:postalCode ?postCode
+} WHERE {
+  OPTIONAL { ?Resource locn:address ?Address . }
+  OPTIONAL { ?Address locn:fullAddress ?fullAddress . }
+  OPTIONAL { ?Address locn:poBox ?poBox . }
+  OPTIONAL { ?Address locn:thoroughfare ?thoroughfare . }
+  OPTIONAL { ?Address locn:locatorDesignator ?locatorDesignator . }
+  OPTIONAL { ?Address locn:thoroughfare ?thoroughfare ;
+    locn:locatorDesignator ?locatorDesignator
+    BIND(CONCAT(?thoroughfare, ', ', ?locatorDesignator) AS ?street_name_and_nr) . }
+  OPTIONAL { ?Address locn:thoroughfare ?street_name
+    FILTER NOT EXISTS { ?Address locn:locatorDesignator ?locatorDesignator } . }
+#  OPTIONAL { ?Address locn:locatorName ?locatorName . }
+#  OPTIONAL { ?Address locn:addressArea ?addressArea . }
+  OPTIONAL { ?Address locn:postName ?postName . }
+  OPTIONAL { ?Address locn:adminUnitL2 ?adminUnitL2 . }
+  OPTIONAL { ?Address locn:adminUnitL1 ?adminUnitL1 . }
+  OPTIONAL { ?Address locn:postCode ?postCode . }
+#  OPTIONAL { ?Address locn:addressId ?addressId . }
+}
