@@ -10,7 +10,8 @@ CONSTRUCT {
     schema:addressLocality ?postName ;
     schema:addressRegion ?adminUnitL2 ;
     schema:addressCountry ?adminUnitL1 ;
-    schema:postalCode ?postCode
+    schema:postalCode ?postCode ;
+    schema:identifier ?addressId
 } WHERE {
   OPTIONAL { ?Resource locn:address ?Address . }
   OPTIONAL { ?Address locn:fullAddress ?fullAddress . }
@@ -28,5 +29,5 @@ CONSTRUCT {
   OPTIONAL { ?Address locn:adminUnitL2 ?adminUnitL2 . }
   OPTIONAL { ?Address locn:adminUnitL1 ?adminUnitL1 . }
   OPTIONAL { ?Address locn:postCode ?postCode . }
-#  OPTIONAL { ?Address locn:addressId ?addressId . }
+  OPTIONAL { ?Address locn:addressId ?addressId . }
 }

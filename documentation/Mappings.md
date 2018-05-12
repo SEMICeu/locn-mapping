@@ -44,7 +44,7 @@
 <ul>
 <li><a target="_blank" href="https://www.w3.org/ns/locn">ISA Core Location Vocabulary</a> (<time datetime="2015-03-23">23 March 2015</time>)</li>
 <li><a target="_blank" href="https://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/">vCard Ontology - for describing People and Organizations</a> (<time datetime="2014-05-22">22 May 2014</time>)</li>
-<li><a target="_blank" href="http://schema.org/version/3.1/">Schema.org 3.1</a> (<time datetime="2016-08-09">9 August 2016</time>)</li>
+<li><a target="_blank" href="http://schema.org/version/3.3/">Schema.org 3.3</a> (<time datetime="2017-08-14">14 August 2017</time>)</li>
 </ul>
 <p>
 <p>For the mappings, existing work has been taken into account concerning the mapping of Schema.org to other metadata standards. In particular:</p>
@@ -74,10 +74,15 @@
 </dd>
 <dt><strong>Missing mappings</strong></dt>
 <dd>
+<!--
 <p>This class includes 4 of the mapped terms, namely, <a target="_blank" title="http://www.w3.org/ns/locn#addressId" href="http://www.w3.org/ns/locn#locn:addressId"><code>locn:addressId</code></a>, <a target="_blank" title="http://www.w3.org/ns/locn#poBox" href="http://www.w3.org/ns/locn#locn:poBox"><code>locn:poBox</code></a>, <a target="_blank" title="http://www.w3.org/ns/locn#locatorName" href="http://www.w3.org/ns/locn#locn:locatorName"><code>locn:locatorName</code></a>, and <a target="_blank" title="http://www.w3.org/ns/locn#addressArea" href="http://www.w3.org/ns/locn#locn:addressArea"><code>locn:addressArea</code></a>.</p>
+-->
+<p>This class includes 3 of the mapped terms, namely, <a target="_blank" title="http://www.w3.org/ns/locn#poBox" href="http://www.w3.org/ns/locn#locn:poBox"><code>locn:poBox</code></a>, <a target="_blank" title="http://www.w3.org/ns/locn#locatorName" href="http://www.w3.org/ns/locn#locn:locatorName"><code>locn:locatorName</code></a>, and <a target="_blank" title="http://www.w3.org/ns/locn#addressArea" href="http://www.w3.org/ns/locn#locn:addressArea"><code>locn:addressArea</code></a>.</p>
 <p>More precisely:</p>
 <ul>
+<!--
 <li><a target="_blank" title="http://www.w3.org/ns/locn#addressId" href="http://www.w3.org/ns/locn#locn:addressId"><code>locn:addressId</code></a> is not supported by Schema.org</li>
+-->
 <li><a target="_blank" title="http://www.w3.org/ns/locn#poBox" href="http://www.w3.org/ns/locn#locn:poBox"><code>locn:poBox</code></a> is not supported by vCard</li>
 <li><a target="_blank" title="http://www.w3.org/ns/locn#locatorName" href="http://www.w3.org/ns/locn#locn:locatorName"><code>locn:locatorName</code></a>, and <a target="_blank" title="http://www.w3.org/ns/locn#addressArea" href="http://www.w3.org/ns/locn#locn:addressArea"><code>locn:addressArea</code></a> are not supported by vCard and Schema.org</li>
 </ul>
@@ -278,12 +283,17 @@
 <tr>
 <td><a target="_blank" title="http://www.w3.org/ns/locn#addressId" href="http://www.w3.org/ns/locn#locn:addressId"><code>locn:addressId</code></a></td>
 <td><a target="_blank" title="http://www.w3.org/2006/vcard/ns#hasUID" href="http://www.w3.org/TR/vcard-rdf/#d4e592"><code>vcard:hasUID</code></a></td>
+<!--
 <td>TBD</td>
+-->
+<td><a target="_blank" title="http://schema.org/identifier" href="http://schema.org/identifier"><code>schema:identifier</code></a></td>
 <td>
 <p>In vCard, <a target="_blank" title="http://www.w3.org/2006/vcard/ns#hasUID" href="http://www.w3.org/TR/vcard-rdf/#d4e592"><code>vcard:hasUID</code></a> is formally defined as an <code>owl:ObjectProperty</code>, and therefore its value cannot be a literal. However, this seems to be in conflict with its informal definition, which is less restrictive&mdash;quoting:</p>
 <blockquote>[&hellip;] a value that represents a globally unique identifier corresponding to the object.</blockquote>
 <p>(<strong>to be verified</strong>)</p>
+<!--
 <p>Schema.org does not define terms to model this information.</p>
+-->
 </td>
 </tr>
 </tbody>
@@ -426,7 +436,8 @@
         schema:addressLocality ?postName ;
         schema:addressRegion ?adminUnitL2 ;
         schema:addressCountry ?adminUnitL1 ;
-        schema:postalCode ?postCode
+        schema:postalCode ?postCode ;
+        schema:identifier ?addressId
     } WHERE {
       OPTIONAL { ?Resource locn:address ?Address . }
       OPTIONAL { ?Address locn:fullAddress ?fullAddress . }
@@ -444,7 +455,7 @@
       OPTIONAL { ?Address locn:adminUnitL2 ?adminUnitL2 . }
       OPTIONAL { ?Address locn:adminUnitL1 ?adminUnitL1 . }
       OPTIONAL { ?Address locn:postCode ?postCode . }
-    #  OPTIONAL { ?Address locn:addressId ?addressId . }
+      OPTIONAL { ?Address locn:addressId ?addressId . }
     }
 
 </section>
