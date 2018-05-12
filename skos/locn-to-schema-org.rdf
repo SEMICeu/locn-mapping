@@ -123,9 +123,9 @@
   <rdf:Description rdf:about="http://www.w3.org/ns/locn#postCode">
     <skos:exactMatch rdf:resource="http://schema.org/postalCode"/>
   </rdf:Description>
-<!-- TBD
+
   <rdf:Description rdf:about="http://www.w3.org/ns/locn#addressId">
-    <skos:broadMatch rdf:resource="http://schema.org/??"/>
+    <skos:broadMatch rdf:resource="http://schema.org/identifier"/>
   </rdf:Description>
--->
+
 </rdf:RDF>
