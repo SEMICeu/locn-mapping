@@ -8,7 +8,8 @@ Comments and queries should be sent to the [ISA Core Location Vocabulary Task Fo
 
 # Content
 
-* [`documentation/`](./documentation/): Folder containing documentation on the defined mappings
+* [`docs/`](./docs/): Folder containing the HTML documentation on the defined mappings. This documentation can be previewed at: [https://semiceu.github.io/locn-mapping/](https://semiceu.github.io/locn-mapping/).
+* [`documentation/`](./documentation/): Folder containing the Markdown documentation on the defined mappings
 * [`LICENCE.md`](./LICENCE.md): The licence for the resources available from this repository.
 * [`README.md`](./README.md): This document. 
 * [`skos/`](./skos/): SKOS definition of the mappings between LOCN, vCard, and Schema.org. 
