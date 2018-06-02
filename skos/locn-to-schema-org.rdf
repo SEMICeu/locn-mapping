@@ -18,7 +18,7 @@
     <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
     <dct:type rdf:resource="http://purl.org/adms/assettype/Mapping"/>
     <adms:interoperabilityLevel rdf:resource="http://purl.org/adms/interoperabilitylevel/Semantic"/>
-    <foaf:page rdf:resource="https://webgate.ec.europa.eu/CITnet/stash/projects/ODCKAN/repos/locn-mapping/browse/documentation/"/>
+    <foaf:page rdf:resource="https://github.com/SEMICeu/locn-mapping/tree/master/documentation/"/>
     <adms:representationTechnique rdf:resource="http://purl.org/adms/representationtechnique/SKOS"/>
     <align:onto1 rdf:resource="http://www.w3.org/ns/locn"/>
     <align:onto2 rdf:resource="http://schema.org/"/>
@@ -27,7 +27,7 @@
     <adms:status rdf:resource="http://purl.org/adms/status/UnderDevelopment"/>
     <dcat:distribution>
       <dcat:Distribution>
-        <dcat:downloadURL rdf:resource="https://webgate.ec.europa.eu/CITnet/stash/projects/ODCKAN/repos/locn-mapping/browse/locn-to-schema-org.rdf?raw"/>
+        <dcat:downloadURL rdf:resource="https://raw.githubusercontent.com/SEMICeu/locn-mapping/master/skos/locn-to-schema-org.rdf"/>
         <dct:format rdf:resource="http://www.w3.org/ns/formats/data/RDF_XML"/>
       </dcat:Distribution>
     </dcat:distribution>
