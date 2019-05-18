@@ -1,10 +1,12 @@
 var respecConfig = {
 // ISA specific
-//    version: "1.0.2",
+/*
+    version: "1.0.2",
     versionURL: "https://semiceu.github.io/locn-mapping/spec/",
     latestVersionURL: "https://semiceu.github.io/locn-mapping/spec/",
-
+*/
 //	preProcess: [dfn_index],
+/* Uncomment to add the ISA logo */
 //    logos: [{
 ////      src: './images/eu-isa-programme.png',
 //      src: "./images/eu-isa2-programme.jpg",
@@ -19,23 +21,23 @@ var respecConfig = {
 //      id: 'logo-eu-isa-programme',
 //    }],
 //    includePermalinks: true,
+    addSectionLinks: true,
     doJsonLd: true,
     noRecTrack: true,    
-//    subtitle: "A geospatial extension for the DCAT application profile for data portals in Europe",
+//    subtitle: "",
+/*
     copyrightHolder: "European Union",
     copyrightURL: "https://europa.eu/",
+*/
     copyrightStart: 2016,
 //    publishDate: "2016-08-02",
 /*
     alternateFormats: [{
-      label: "PDF",
-      uri: "http://data.europa.eu/w21/483d8c3f-b577-4fbb-ac05-fc55cdf44421",
-    }, {
-      label: "DOCX",
-      uri: "http://data.europa.eu/w21/f106d0e0-4777-4ae2-bfc7-54c4f1d72b79",
+      label: "",
+      uri: "",
     }],    
 */
-//    license: "isa-open-metadata",
+    license: "isa-open-metadata",
     specStatus: "unofficial",
     shortName: "locn-mapping",
     canonicalURI: "https://github.com/semiceu/locn-mapping/spec/",
@@ -46,11 +48,12 @@ var respecConfig = {
 //    edDraftURI:           "https://github.com/semiceu/locn-mapping/spec/",
     issueBase:            "https://github.com/semiceu/locn-mapping/issues/",
     github:               "https://github.com/semiceu/locn-mapping/",
+    overrideCopyright:    '<p class="copyright"><a href="https://europa.eu/european-union/abouteuropa/legal_notices_en#copyright_notice">Copyright</a> © 2016-2019 <a href="https://europa.eu/">European Union</a>. This document is licensed under the <a rel="license" href="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"><abbr title="Interoperability Solutions for European Public Administrations">ISA</abbr> Open Metadata Licence v1.1</a>.</p>',
     editors: [
     {
       name:       "Andrea Perego",
+      orcid:      "0000-0001-9300-2694",
       company:    "European Commission, Joint Research Centre",
-      url: "",
       companyURL: "https://ec.europa.eu/jrc/"
     }
     ],
@@ -61,55 +64,21 @@ var respecConfig = {
       company:    "European Commission, Joint Research Centre",
       url: "",
       companyURL: "https://ec.europa.eu/jrc/"
-    },
-    {
-      name:       "Anders Friis-Christensen",
-      company:    "European Commission, Joint Research Centre",
-      url: "",
-      companyURL: "https://ec.europa.eu/jrc/"
-    },
-    {
-      name:       "Lorenzino Vaccari",
-      company:    "European Commission, Joint Research Centre",
-      url: "",
-      companyURL: "https://ec.europa.eu/jrc/"
-    },
-    {
-      name:       "Chrisa Tsinaraki",
-      company:    "European Commission, Joint Research Centre",
-      url: "",
-      companyURL: "https://ec.europa.eu/jrc/"
-    },
-    ],
+    }],
 */    
 //    otherLinks: [{
 //        key: "Contributors",
 //        data: [{
-//            value: "Makx Dekkers",
-//            href: "http://www.makxdekkers.com"
-//        },{
-//            value: "Antoine Isaac, Europeana Foundation",
-//            href: "https://pro.europeana.eu/person/antoine-isaac"
-//        },{
-//            value: "Andrea Perego, European Commission",
-//            href: "https://ec.europa.eu/jrc/en/research-topic/digital-earth"
-//        }]
-//      },{
-//        key: "Editors of previous version",
-//        data: [{
-//            value: "Fadi Maali, DERI",
-//            href: "http://www.deri.ie/"
-//        },{
-//            value: "John Erickson, Tetherless World Constellation (RPI)",
-//            href: "http://tw.rpi.edu/"
+//            value: "",
+//            href: ""
 //        }]
 //      }],
     wg: "JRC Data Support Team",
 //    wgURI: "",
-//    wgPublicList: "public-dxwg-comments",
+//    wgPublicList: "",
 //    wgPatentURI: "https://www.w3.org/2004/01/pp-impl/99375/status",
     inlineCSS: "true",
-	  lint: "false",
+    lint: "false",
     localBiblio: {
       "DataCite2RDF": {
         "href":"https://doi.org/10.6084/m9.figshare.2075356",
@@ -352,6 +321,16 @@ var respecConfig = {
       "SCHEMA-ORG":{
         "href":"http://schema.org/",
         "title":"Schema.org"
+      },
+      "SCHEMA-ORG-20190501":{
+        "href":"http://schema.org/version/3.6/",
+        "title":"Schema.org version 3.6",
+        "date":"1 May 2019"
+      },
+      "SCHEMA-ORG-20190401":{
+        "href":"http://schema.org/version/3.5/",
+        "title":"Schema.org version 3.5",
+        "date":"1 April 2019"
       },
       "SCHEMA-ORG-20180615":{
         "href":"http://schema.org/version/3.4/",
