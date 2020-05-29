@@ -7,7 +7,8 @@ var respecConfig = {
 */
 //	preProcess: [dfn_index],
 /* Uncomment to add the ISA logo */
-//    logos: [{
+    logos: [
+//    {
 ////      src: './images/eu-isa-programme.png',
 //      src: "./images/eu-isa2-programme.jpg",
 ////      url: 'https://ec.europa.eu/isa',
@@ -19,7 +20,8 @@ var respecConfig = {
 //      width: 150,
 ////      height: 42,
 //      id: 'logo-eu-isa-programme',
-//    }],
+//    }
+    ],
 //    includePermalinks: true,
     addSectionLinks: true,
     doJsonLd: true,
@@ -30,7 +32,7 @@ var respecConfig = {
     copyrightURL: "https://europa.eu/",
 */
     copyrightStart: 2016,
-//    publishDate: "2016-08-02",
+    publishDate: "2019-09-13",
 /*
     alternateFormats: [{
       label: "",
@@ -48,7 +50,8 @@ var respecConfig = {
 //    edDraftURI:           "https://github.com/semiceu/locn-mapping/spec/",
     issueBase:            "https://github.com/semiceu/locn-mapping/issues/",
     github:               "https://github.com/semiceu/locn-mapping/",
-    overrideCopyright:    '<p class="copyright"><a href="https://europa.eu/european-union/abouteuropa/legal_notices_en#copyright_notice">Copyright</a> © 2016-2019 <a href="https://europa.eu/">European Union</a>. This document is licensed under the <a rel="license" href="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"><abbr title="Interoperability Solutions for European Public Administrations">ISA</abbr> Open Metadata Licence v1.1</a>.</p>',
+//    overrideCopyright:    '<p class="copyright"><a href="https://europa.eu/european-union/abouteuropa/legal_notices_en#copyright_notice">Copyright</a> © 2016-2019 <a href="https://europa.eu/">European Union</a>. This document is licensed under the <a rel="license" href="https://joinup.ec.europa.eu/category/licence/isa-open-metadata-licence-v11"><abbr title="Interoperability Solutions for European Public Administrations">ISA</abbr> Open Metadata Licence v1.1</a>.</p>',
+//    overrideCopyright:    '<p class="copyright"><a href="https://europa.eu/european-union/abouteuropa/legal_notices_en#copyright_notice">Copyright</a> © 2016-2019 <a href="https://europa.eu/">European Union</a>. This document is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" class="subfoot">Creative Commons Attribution 4.0 License</a>.</p>',
     editors: [
     {
       name:       "Andrea Perego",
@@ -73,7 +76,7 @@ var respecConfig = {
 //            href: ""
 //        }]
 //      }],
-    wg: "JRC Data Support Team",
+//    wg: "",
 //    wgURI: "",
 //    wgPublicList: "",
 //    wgPatentURI: "https://www.w3.org/2004/01/pp-impl/99375/status",
