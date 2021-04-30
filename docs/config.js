@@ -1,10 +1,4 @@
 var respecConfig = {
-// ISA specific
-/*
-    version: "1.0.2",
-    versionURL: "https://semiceu.github.io/locn-mapping/spec/",
-    latestVersionURL: "https://semiceu.github.io/locn-mapping/spec/",
-*/
 //	preProcess: [dfn_index],
 /* Uncomment to add the ISA logo */
     logos: [
@@ -27,19 +21,21 @@ var respecConfig = {
     doJsonLd: true,
     noRecTrack: true,    
 //    subtitle: "",
-/*
-    copyrightHolder: "European Union",
-    copyrightURL: "https://europa.eu/",
-*/
+//    copyrightHolder: "European Union",
+//    copyrightURL: "https://europa.eu/",
     copyrightStart: 2016,
     publishDate: "2019-09-13",
-/*
-    alternateFormats: [{
-      label: "",
-      uri: "",
-    }],    
-*/
-    license: "isa-open-metadata",
+    alternateFormats: [
+    {
+      label: "SPARQL",
+      uri: "https://github.com/SEMICeu/locn-mapping/tree/master/sparql",
+    },
+    {
+      label: "SKOS",
+      uri: "https://github.com/SEMICeu/locn-mapping/tree/master/skos",
+    }
+    ],    
+    license: "cc-by",
     specStatus: "unofficial",
     shortName: "locn-mapping",
     canonicalURI: "https://github.com/semiceu/locn-mapping/spec/",
